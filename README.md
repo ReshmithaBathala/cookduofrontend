@@ -28,17 +28,17 @@ To run this project locally, follow these steps:
    npm install
    ```
 3. Install frontend dependencies:
-4. ```bash
+ ```bash
    cd frontend
    npm install
    ```
-5. Set up your environment variables
-6. Start the backend server:
+4. Set up your environment variables
+5. Start the backend server:
    ```bash
    cd backend
     npm start
    ```
-7. Start the frontend development server:
+6. Start the frontend development server:
    ```bash
    cd frontend
    npm start
