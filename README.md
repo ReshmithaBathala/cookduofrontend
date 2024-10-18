@@ -43,10 +43,10 @@ To run this project locally, follow these steps:
    cd frontend
    npm start
    ```
-##Usage
+Usage
 Open your browser and navigate to http://localhost:3000 for the frontend.
 
-##Deployed URL:https://cookduofrontend.vercel.app/
+Deployed URL:https://cookduofrontend.vercel.app/
 
 
 
