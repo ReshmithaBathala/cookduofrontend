@@ -1,0 +1,36 @@
+/* src/components/index.css */
+.navbar-custom {
+  background-color: #f8f9fa; /* Light background color */
+  padding: 10px 20px; /* Add some padding */
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* Adjust font size as needed */
+  font-weight: bold; /* Make brand bold */
+  color: #333; /* Brand color */
+}
+
+.nav-item {
+  color: #333; /* Color for nav items */
+  margin-right: 15px; /* Space between nav items */
+}
+
+.nav-item:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+.nav-dropdown .dropdown-toggle::after {
+  display: none; /* Remove default arrow */
+}
+
+.navbar-toggler {
+  border-color: #007bff; /* Change toggle button color */
+}
+
+.navbar-toggler-icon {
+  background-color: #007bff; /* Change toggle icon color */
+}
+.cook-duo-img {
+  height: 50px;
+  width: 100px;
+}

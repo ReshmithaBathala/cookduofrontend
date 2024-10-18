@@ -1,0 +1,65 @@
+.recipe-card {
+  /* Keep the max-height for scrollbar if needed */
+  max-height: 530px;
+  width: 30%;
+  overflow: hidden; /* Prevent overflow of content */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Align content vertically */
+}
+
+.card {
+  display: flex; /* Use flexbox for the card */
+  flex-direction: column; /* Stack children vertically */
+  height: 100%; /* Ensure card uses full height */
+}
+
+.card-body {
+  flex: 1; /* Take available space */
+  display: flex; /* Flexbox for card body */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: space-between; /* Evenly distribute space */
+}
+
+.card-img-top {
+  height: 40%; /* Keep as is */
+  object-fit: cover;
+}
+
+.recipe-card::-webkit-scrollbar {
+  width: 4px; /* Thin scrollbar */
+}
+
+.recipe-card::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.recipe-card::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); /* Darker scrollbar thumb */
+  border-radius: 10px; /* Rounded edges */
+  min-height: 20px; /* Minimum height for the thumb */
+}
+
+@media screen and (max-width: 767px) {
+  .recipe-card {
+    width: 100%;
+  }
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center; /* Center the pagination buttons */
+  margin: 20px 0; /* Adds space above and below the pagination buttons */
+}
+
+.pagination button {
+  margin: 0 5px; /* Space between buttons */
+}
+
+.next-prev-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}

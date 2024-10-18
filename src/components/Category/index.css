@@ -1,0 +1,62 @@
+.recipe-card {
+  height: 530px;
+  width: 30%;
+  overflow-y: auto;
+  max-height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box; /* Ensure padding doesn't exceed card size */
+  padding: 10px; /* Add padding for internal content */
+}
+
+.recipe-card .card-body {
+  flex-grow: 1; /* Allow content to grow inside but stay within the card */
+  overflow-y: auto; /* Allow scrolling if content exceeds */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space out content evenly */
+}
+
+/* Scrollbar for card-body styled the same as recipe-card */
+.recipe-card .card-body::-webkit-scrollbar {
+  width: 4px; /* Thin scrollbar */
+}
+
+.recipe-card .card-body::-webkit-scrollbar-track {
+  background: transparent; /* Optional: can set a light background */
+}
+
+.recipe-card .card-body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); /* Darker scrollbar thumb */
+  border-radius: 10px; /* Rounded edges */
+  min-height: 20px; /* Minimum height for the thumb */
+}
+
+.recipe-card .btn {
+  width: 50%; /* Full width button */
+  margin-top: 10px; /* Space above the button */
+  box-sizing: border-box; /* Ensure padding stays inside width */
+  color: white;
+}
+
+/* Scrollbar for the entire recipe card */
+.recipe-card::-webkit-scrollbar {
+  width: 4px; /* Thin scrollbar */
+}
+
+.recipe-card::-webkit-scrollbar-track {
+  background: transparent; /* Optional: can set a light background */
+}
+
+.recipe-card::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); /* Darker scrollbar thumb */
+  border-radius: 10px; /* Rounded edges */
+  min-height: 20px; /* Minimum height for the thumb */
+}
+
+@media screen and (max-width: 767px) {
+  .recipe-card {
+    width: 100%;
+  }
+}
